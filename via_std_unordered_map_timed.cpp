@@ -29,8 +29,10 @@ int main(int argc, char *argv[]) {
             getline(ss, north, ',');
             std::string south;
             getline(ss, south, ',');
-            north_key_south_value[north] = south;
-            south_key_north_value[south] = north;
+            //north_key_south_value[north] = south;
+            //south_key_north_value[south] = north;
+            north_key_south_value.insert(std::pair<std::string,std::string>(north,south));
+            south_key_north_value.insert(std::pair<std::string,std::string>(south,north));
         }
     } else {
         std::cout << "Unable to read results file: " << argv[1] << std::endl;
