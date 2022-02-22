@@ -36,3 +36,5 @@ build/
 *.txt
 
 .idea/
+
+cmake-build-debug/
